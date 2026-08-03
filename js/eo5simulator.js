@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  simulator = new EOXSimulator();
+  simulator = new eo5Simulator();
 });
 
-class EOXSimulator extends Simulator {
+class eo5Simulator extends Simulator {
   get defaultClass() {
     return "Shaman - Blood";
   }

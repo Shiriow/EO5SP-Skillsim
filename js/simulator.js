@@ -443,7 +443,7 @@ class Simulator {
           let useIcon = document.createElement("img");
           useIcon.classList.add("skill-use-icon");
           useIcon.alt = normalized;
-          useIcon.src = (window.location.pathname.includes("/eox/") ? "../resources/" : "resources/") + iconFile;
+          useIcon.src = (window.location.pathname.includes("/eo5/") ? "../resources/" : "resources/") + iconFile;
           useNode.appendChild(useIcon);
         } else {
           let useLabel = normalized.replace(/([a-z])([A-Z])/g, "$1 $2");
