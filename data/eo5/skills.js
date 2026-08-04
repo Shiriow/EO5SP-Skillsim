@@ -1262,7 +1262,7 @@ gospel: {
   },
   panacea: {
     name_en: "Panacea",
-    desc: "Restores on ally's HP and dispels their ailments and binds.",
+    desc: "Restores one ally's HP and dispels their ailments and binds.",
     stats: [],
     maxLevel: 8
   },
