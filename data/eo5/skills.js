@@ -22,8 +22,8 @@ const buildTitleClasses = (sharedSkillData, titleTreeData) => {
 };
 
 let templateSharedSkills = {
-  
 
+  
 
   speedUp: {
     name_en: "Speed Up",
@@ -62,10 +62,10 @@ let templateSharedSkills = {
     maxLevel: 8
   },
 
-
+  
 
   
-  miasmaMastery: {
+  keeperOfSouls: {
     name_en: "Keeper of Souls", 
     desc: "When an ally dies, the user has a chance to immediately revive them.\nThe user gains Miasma Armor at the start of a battle.",
     
@@ -93,28 +93,24 @@ let templateSharedSkills = {
   enshroud: {
     name_en: "Enshroud",
     desc: "Gain Miasma Armor for 3 turns, and for this turn, increases the user's evasion, damage taken and their chances to be targeted by enemies. \nWhen the user evades an attack, their evasion and chance to be targeted are decreased.",
-    
     stats: [],
     maxLevel: 8
   },
   spectralSeep: {
     name_en: "Empty Moment",
     desc: "Places a buff on one row that enables party members to dodge one physical attack. \nWhen an attack is dodged, the buff is dispelled.",
-    
     stats: [],
     maxLevel: 8
   },
   spitefulSpirit: {
     name_en: "Spiteful Spirit",
     desc: "When the user dodges an attack, they will counterattack the attack source with their equipped weapon. \nEach time the user counterattacks, the chance of activating again on that turn is decreased by 40%.",
-    
     stats: ["INT"],
     maxLevel: 8
   },
   voidReaping: {
     name_en: "Void Reaping",
     desc: "Deals melee STR-based cut damage to one enemy. \nAttempts to inflict blind on the target.",
-    
     stats: [],
     maxLevel: 8
   },
@@ -123,14 +119,12 @@ let templateSharedSkills = {
     desc: "Dispels Miasma Armor to use. The user will be replaced by an illusion, and take extra damage. \nAt the end of the turn if this illusion is still alive, the user returns to battle and deals ranged STR-based cut damage to all enemies. Reduced damage per enemy in battle.",
     
     
-    
     stats: [],
     maxLevel: 8
   },
   bloodyReap: {
     name_en: "Bloody Reap",
     desc: "Consumes a percentage of the user's current HP to deal 2-4 of melee STR-based cut damage to random enemies.",
-    
     stats: [],
     maxLevel: 8
   },
@@ -138,35 +132,30 @@ let templateSharedSkills = {
   bloodMoon: {
     name_en: "Blood Moon",
     desc: "When the user dodges an attack, their chance to be targeted and defense are increased. \nWhen the user is damaged, the effects are reset.",
-    
     stats: [],
     maxLevel: 8
   },
-  cloyingVoid: {
+  weightlessSoul: {
     name_en: "Weightless Soul", 
     desc: "Increases the user's evasion based on how many of their equipment slots are empty.",
-    
     stats: [],
     maxLevel: 8
   },
   maskingMiasma: {
     name_en: "Masking Miasma",
     desc: "Reduces all enemies' accuracy for a set amount of turns.",
-    
     stats: [],
     maxLevel: 8
   },
   nightfall: {
     name_en: "Nightfall",
     desc: "Gives the user a chance to automatically use Empty Moment at the start of a battle.",
-    
     stats: [],
     maxLevel: 8
   },
   grimStalk: {
     name_en: "Grim Stalk", 
     desc: "Deals melee STR-based cut damage to one enemy. \nFor the rest of the turn, the user's evasion and chance to be targeted are increased.",
-    
     stats: [],
     maxLevel: 8
   },
@@ -174,28 +163,24 @@ let templateSharedSkills = {
   reapersCall: {
     name_en: "Reaper's Call",
     desc: "For one turn, when the caster dodges an attack, all other party members in their row will counterattack the attack source.",
-    
     stats: [],
     maxLevel: 8
   },
   gluttony: {
     name_en: "Gluttony",
     desc: "When the user dodges an attack, their Union gauge is restored.",
-    
     stats: [],
     maxLevel: 8
   },
   darkPassenger: {
     name_en: "Dark Passenger",
     desc: "For one turn, increases all party members' evasion. \nEach time a party member dodges an attack, the bonus provided is decreased.",
-    
     stats: [],
     maxLevel: 8
   },
   shredStrawman: {
     name_en: "Shred Strawman",
     desc: "Deals melee STR-based cut damage to one enemy. \nThe damage is multiplied by the amount of times the user has dodged an attack since the last use of this skill. ",
-    
     stats: [],
     maxLevel: 8
   },
@@ -204,7 +189,6 @@ let templateSharedSkills = {
   endlessShroud: {
     name_en: "Endless Shroud",
     desc: "Gives the user a chance to gain the Miasma Armor state when using a debuff skill.",
-    
     stats: [],
     maxLevel: 8
   },
@@ -229,20 +213,19 @@ let templateSharedSkills = {
   deathsAsylum: {
     name_en: "Death's Asylum",
     desc: "Gives the user's row a chance to nullify debuffs and ailments.",
+    
     stats: [],
     maxLevel: 8
   },
   fadingScourge: {
     name_en: "Fading Scourge",
     desc: "Deals multiple instances of melee STR-based cut damage to one enemy and extend their de/buffs once per hit. \nThe amount of attacks is equal to the number of times the user hit an enemy on the last turn.",
-    
     stats: [],
     maxLevel: 8
   },
   miasmaWall: {
     name_en: "Miasma Wall",
     desc: "Requires the Miasma Armor state to use. \nEnds the Miasma Armor state, and gives all party members a chance to nullify any ailments or binds for one turn. ",
-    
     stats: [],
     maxLevel: 8
   },
@@ -268,20 +251,20 @@ let templateSharedSkills = {
 
   
 
-
-  hasteMastery: {
+  
+  perfectTiming: {
     name_en: "Perfect Timing",
     desc: "Increases the user's damage and accuracy when they attack before any enemies have acted.",
     stats: [],
     maxLevel: 10
   },
-  temporalShift: {
+  harvestTime: {
     name_en: "Harvest Time", 
     desc: "Reduces all enemies' action speed for the turn.\nThe user gains the Haste state for 3 turns.",
     stats: [],
     maxLevel: 6
   },
-  causalityLoop: {
+  writtenAgain: {
     name_en: "Written Again",
     desc: "At the end of the turn, deal ranged INT-based almighty damage to all enemies.\nRepeat this skill every turn until disabled.",
     stats: [],
@@ -294,7 +277,7 @@ let templateSharedSkills = {
     maxLevel: 6
   },
 
-  chronoDrift: {
+  fateweaver: {
     name_en: "Fateweaver",
     desc: "When the user has the Haste state, increases their defense when they inflict an ailment.\nGives the user a chance to gain Haste for one turn at the start of battle.",
     stats: [],
@@ -306,13 +289,13 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 8
   },
-  eonRot: {
+  dustToDust: {
     name_en: "Dust to Dust",
     desc: "Requires Haste. Attempts to inflict poison on one row of enemies.",
     stats: [],
     maxLevel: 10
   },
-  fatesDeadline: {
+  smearTheSoul: {
     name_en: "Smear the Soul", 
     desc: "Deals ranged INT-based ice damage on one row of enemies. Attempts to inflict curse on hit targets.",
     stats: [],
@@ -324,14 +307,14 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 8
   },
-  rewind: {
+  anamnesis: {
     name_en: "Anamnesis",
     desc: "Requires and reduces the Haste state by 3 turns. \nRestores an allys' HP and TP.",
     stats: [],
     maxLevel: 10
   },
 
-  doomedFuture: {
+  inevitableEnd: {
     name_en: "Inevitable End", 
     desc: "Increases damage done against cursed targets.",
     stats: [],
@@ -405,6 +388,7 @@ let templateSharedSkills = {
   entropySpike: {
     name_en: "Entropy Spike",
     desc: "Deals ranged INT-based stab damage to one enemy. Reduces hit targets' defense for the turn.",
+    
     stats: [],
     maxLevel: 10
   },
@@ -427,7 +411,7 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 6
   },
-  surgeOfTime: {
+  sowAndReap: {
     
     
     name_en: "Sow and Reap",
@@ -435,13 +419,13 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 10
   },
-  pastSequence: {
+  borrowTomorrow: {
     name_en: "Borrow Tomorrow", 
     desc: "Restores one party member's Union. Attempt to inflict stun on the party.",
     stats: [],
     maxLevel: 8
   },
-  kismetDenial: {
+  falseEvent: {
     name_en: "False Event",
     desc: "Gives a chance to negate elemental attacks on the user's row.",
     stats: [],
@@ -459,17 +443,17 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 6
   },
+  
 
 
-
-
+  
   blitzBrawler: {
     name_en: "Blitz Brawler",
     desc: "Increase the user's speed.\nOn the first turn of battle, increase damage and infliction rate.",
     stats: [],
     maxLevel: 10
   },
-  duel: {
+  followThrough: {
     name_en: "Follow Through",
     desc: "Increases damage when attacking enemies that the user attacked last turn.",
     stats: [],
@@ -535,7 +519,7 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 8
   },
-  ambushStance: {
+  crackBack: {
     name_en: "Crackback",
     desc: "For 3 turns, when the user is hit by a physical attack, they have a chance to enable Finisher skills next turn.",
     stats: [],
@@ -565,7 +549,7 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 8
   },
-  autoCombo: {
+  jumpTheBell: {
     name_en: "Jump the Bell",
     desc: "At the start of battle, Finisher skills may be usable for one turn.",
     stats: [],
@@ -589,7 +573,7 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 10
   },
-  corkscrew: {
+  pileOn: {
     name_en: "Pile On",
     desc: "Deals melee STR-based bash damage to one enemy. Increased damage on enemies inflicted by ailments/binds.",
     
@@ -606,6 +590,7 @@ let templateSharedSkills = {
   leadingBlow: {
     name_en: "Leading Blow",
     desc: "Deals melee STR-based bash damage to one enemy, with increased damage on enemies with an ailment. \nIf the target has binds, follows up with the following skills: Concussion for head bind, Arm Crusher for arm bind, Low Blow for leg bind.",
+    
     stats: [],
     maxLevel: 4
   },
@@ -776,7 +761,7 @@ let templateSharedSkills = {
   },
 
 
-  shieldEcho: {
+  stoneRipples: {
     name_en: "Stone Ripples",
     desc: "When the user attacks an enemy, they will follow-up with a melee STR-based almighty attack.\nThis attack uses the user's equipped shield's DEF as a replacement for weapon ATK.",
     stats: [],
@@ -794,8 +779,8 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 8
   },
-  overlimitFang: {
-    name_en: "Blossom Dance",
+  blossomDance: {
+    name_en: "Blossom Dance", 
     desc: "Deals melee STR-based cut damage to one enemy.\nDeals increased damage per Vow buff on the user.",
     stats: [],
     maxLevel: 8
@@ -841,13 +826,13 @@ let templateSharedSkills = {
 
 
   
-  pointblankPoise: {
+  livingBastion: {
     name_en: "Living Bastion",
     desc: "When in the front row, the user has a chance of negating physical attacks against themselves.",
     stats: [],
     maxLevel: 8
   },
-  vitaeEngine: {
+  martyrsHeart: {
     name_en: "Martyr's Heart",
     desc: "Increases the user's maximum HP. \nWhen the user dies, they will restore the rest of the party's HP.",
     stats: [],
@@ -883,22 +868,22 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 8
   },
-  painTrigger: {
+  returnFire: {
     name_en: "Return Fire",
     desc: "When the user loses HP, they have a chance to attack an enemy with their equipped weapon.",
     stats: [],
     maxLevel: 10
   },
-  pyrrhicGambit: {
+  pyrrhicRuin: {
     name_en: "Pyrrhic Ruin",
     desc: "Deals ranged STR-based bash damage to one enemy. \nDeals melee STR-based bash damage to the user at the end of the next turn.",
     stats: [],
     maxLevel: 8
   },
-  ionBackfire: {
+  hellfireRound: {
     name_en: "Hellfire Round", 
     desc: "Deals ranged STR-based fire damage to one enemy. If the target is not killed, the user suffers backlash damage.",
-    stats: ["Cannon","ArmBind"],
+    stats: ["ArmBind"],
     maxLevel: 8
   },
   crushingBarrage: {
@@ -920,7 +905,7 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 6
   },
-  powderMark: {
+  deathWish: {
     name_en: "Death Wish",
     desc: "Deals ranged bash damage to one enemy. Increases damage taken and their chances of being targeted for the rest of the turn.",
     stats: [],
@@ -938,7 +923,7 @@ let templateSharedSkills = {
     stats: [],
     maxLevel: 8
   },
-  magnaCore: {
+  burnBright: {
     name_en: "Burn Bright",
     desc: "For 3 turns one party member has increased attack, defense, and ailment/bind resistance at the cost of losing a percentage of their current HP whenever they act.",
     stats: [],
@@ -969,7 +954,7 @@ let templateSharedSkills = {
     maxLevel: 10
   },
   
-  impulseGear: {
+  breakingPoint: {
     name_en: "Breaking Point",
     desc: "When the user reduces damage they themselves take, or negates an attack entirely, they have a chance to gain a stack of damage increase for their Cannon skills for the rest of the battle.",
     stats: [],
@@ -1035,7 +1020,7 @@ let templateSharedSkills = {
 
   
 
-gospel: {
+  gospel: {
     name_en: "Gospel",
     desc: "When the Shaman buffs an ally, a percentage of that ally's maximum HP is restored.",
     stats: [],
@@ -1243,7 +1228,7 @@ gospel: {
   petalStorm: {
     name_en: "Petal Storm",
     desc: "Deals melee INT-based cut damage to one row of enemies. If the user has ailments/binds, attempts to transfer them to hit targets.",
-    stats: ["Scythe","ArmBind"],
+    stats: ["Scythe", "ArmBind"],
     maxLevel: 6
   },
   purification: {
@@ -1427,26 +1412,26 @@ let templateTitleTrees = {
       coords: { x: 1, y: 0.5 }
     },
     dragonRoar: {
-      dep: {  },
+      dep: {},
       coords: { x: 0, y: 2.5 }
     },
     fieldBandage: {
-      dep: {dragonRoar: 2 },
+      dep: { dragonRoar: 2 },
       coords: { x: 1, y: 2 }
     },
-    pointblankPoise: {
-      dep: {dragonRoar: 2 },
+    livingBastion: {
+      dep: { dragonRoar: 2 },
       coords: { x: 1, y: 3 }
     },
-    painTrigger: {
+    returnFire: {
       dep: {},
       coords: { x: 0, y: 4 }
     },
-    pyrrhicGambit: {
-      dep: { painTrigger: 2 },
+    pyrrhicRuin: {
+      dep: { returnFire: 2 },
       coords: { x: 1, y: 4 }
     },
-    ionBackfire: {
+    hellfireRound: {
       dep: {},
       coords: { x: 1, y: 6 }
     },
@@ -1467,7 +1452,7 @@ let templateTitleTrees = {
       dep: { gunmount: 3 },
       coords: { x: 2, y: 1 }
     },
-    powderMark: {
+    deathWish: {
       dep: { criticalPressure: 3 },
       coords: { x: 3, y: 1 }
     },
@@ -1479,20 +1464,20 @@ let templateTitleTrees = {
       dep: { radiantZenith: 3 },
       coords: { x: 3, y: 2 }
     },
-    magnaCore: {
-      dep: {  },
+    burnBright: {
+      dep: {},
       coords: { x: 2, y: 3 }
     },
     lastShell: {
-      dep: { magnaCore: 3, edgeOfSurvival: 3 },
+      dep: { burnBright: 3, edgeOfSurvival: 3 },
       coords: { x: 3, y: 3.5 }
     },
     edgeOfSurvival: {
-      dep: {pyrrhicGambit: 3 },
+      dep: { pyrrhicRuin: 3 },
       coords: { x: 2, y: 4 }
     },
     shockLock: {
-      dep: { ionBackfire: 3, crushingBarrage: 3 },
+      dep: { hellfireRound: 3, crushingBarrage: 3 },
       coords: { x: 2, y: 5.5 }
     },
     preempArtillery: {
@@ -1522,19 +1507,19 @@ let templateTitleTrees = {
       dep: { dragonRoar: 2 },
       coords: { x: 1, y: 2 }
     },
-    pointblankPoise: {
+    livingBastion: {
       dep: { dragonRoar: 2 },
       coords: { x: 1, y: 3 }
     },
-    painTrigger: {
+    returnFire: {
       dep: {},
       coords: { x: 0, y: 4 }
     },
-    pyrrhicGambit: {
-      dep: { painTrigger: 2 },
+    pyrrhicRuin: {
+      dep: { returnFire: 2 },
       coords: { x: 1, y: 4 }
     },
-    ionBackfire: {
+    hellfireRound: {
       dep: {},
       coords: { x: 1, y: 6 }
     },
@@ -1563,27 +1548,27 @@ let templateTitleTrees = {
       dep: { divideGuard: 3 },
       coords: { x: 3, y: 2 }
     },
-    vitaeEngine: {
-      dep: { pointblankPoise: 3 },
+    martyrsHeart: {
+      dep: { livingBastion: 3 },
       coords: { x: 2, y: 3 }
     },
     sentinelGuard: {
-      dep: { vitaeEngine: 3 },
+      dep: { martyrsHeart: 3 },
       coords: { x: 3, y: 3 }
     },
     counterGuard: {
-      dep: { pyrrhicGambit: 3 },
+      dep: { pyrrhicRuin: 3 },
       coords: { x: 2, y: 4 }
     },
     shieldNetwork: {
-      dep: {crushingBarrage: 3 },
+      dep: { crushingBarrage: 3 },
       coords: { x: 2, y: 5 }
     },
     bloodAegis: {
-      dep: { ionBackfire: 3 },
+      dep: { hellfireRound: 3 },
       coords: { x: 2, y: 6 }
     },
-    impulseGear: {
+    breakingPoint: {
       dep: { shieldNetwork: 3, bloodAegis: 3 },
       coords: { x: 3, y: 5.5 }
     },
@@ -1594,7 +1579,7 @@ let templateTitleTrees = {
       dep: {},
       coords: { x: 0, y: 0 }
     },
-    duel: {
+    followThrough: {
       dep: {},
       coords: { x: 1, y: 0 }
     },
@@ -1611,7 +1596,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 3 }
     },
     oneTwoPunch: {
-      dep: { concussion: 1, armCrusher: 1, lowBlow: 1 },
+      dep: { concussion: 2, armCrusher: 2, lowBlow: 2 },
       coords: { x: 1, y: 2 }
     },
     faultBlocker: {
@@ -1619,7 +1604,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 4 }
     },
     breather: {
-      dep: { faultBlocker: 1 },
+      dep: { faultBlocker: 2 },
       coords: { x: 1, y: 4 }
     },
     knockoutBlow: {
@@ -1627,7 +1612,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 5.5 }
     },
     knuckleFever: {
-      dep: { knockoutBlow: 1 },
+      dep: { knockoutBlow: 2 },
       coords: { x: 1, y: 5.5 }
     },
     
@@ -1639,12 +1624,12 @@ let templateTitleTrees = {
       dep: {},
       coords: { x: 2, y: 1.5 }
     },
-    ambushStance: {
-      dep: { bulwarkArm: 1 },
+    crackBack: {
+      dep: { bulwarkArm: 3 },
       coords: { x: 3, y: 1 }
     },
     rhythmBreak: {
-      dep: { bulwarkArm: 1 },
+      dep: { bulwarkArm: 3 },
       coords: { x: 3, y: 2 }
     },
     madLunge: {
@@ -1652,19 +1637,19 @@ let templateTitleTrees = {
       coords: { x: 2, y: 3 }
     },
     breakfireRush: {
-      dep: { madLunge: 1 },
+      dep: { madLunge: 3 },
       coords: { x: 3, y: 3 }
     },
     unyieldingWill: {
       dep: {},
       coords: { x: 2, y: 4.5 }
     },
-    autoCombo: {
-      dep: { unyieldingWill: 1 },
+    jumpTheBell: {
+      dep: { unyieldingWill: 3 },
       coords: { x: 3, y: 4.5 }
     },
     forbiddenFist: {
-      dep: { knuckleFever: 1 },
+      dep: { knuckleFever: 3 },
       coords: { x: 2, y: 5.5 }
     },
     belowTheBelt: {
@@ -1679,7 +1664,7 @@ let templateTitleTrees = {
       dep: {},
       coords: { x: 0, y: 0 }
     },
-    duel: {
+    followThrough: {
       dep: {},
       coords: { x: 1, y: 0 }
     },
@@ -1696,7 +1681,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 3 }
     },
     oneTwoPunch: {
-      dep: { concussion: 1, armCrusher: 1, lowBlow: 1 },
+      dep: { concussion: 2, armCrusher: 2, lowBlow: 2 },
       coords: { x: 1, y: 2 }
     },
     faultBlocker: {
@@ -1704,7 +1689,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 4 }
     },
     breather: {
-      dep: { faultBlocker: 1 },
+      dep: { faultBlocker: 2 },
       coords: { x: 1, y: 4 }
     },
     knockoutBlow: {
@@ -1712,7 +1697,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 5.5 }
     },
     knuckleFever: {
-      dep: { knockoutBlow: 1 },
+      dep: { knockoutBlow: 2 },
       coords: { x: 1, y: 5.5 }
     },
     
@@ -1725,12 +1710,12 @@ let templateTitleTrees = {
       dep: {},
       coords: { x: 3, y: 0 }
     },
-    corkscrew: {
+    pileOn: {
       dep: {},
       coords: { x: 2, y: 1 }
     },
     leadingBlow: {
-      dep: { corkscrew: 1, oneTwoPunch: 1 },
+      dep: { pileOn: 3, oneTwoPunch: 3 },
       coords: { x: 3, y: 1.5 }
     },
     touchOfDeath: {
@@ -1742,7 +1727,7 @@ let templateTitleTrees = {
       coords: { x: 3, y: 3 }
     },
     crossCounter: {
-      dep: { breather: 1 },
+      dep: { breather: 3 },
       coords: { x: 2, y: 4 }
     },
 
@@ -1755,19 +1740,19 @@ let templateTitleTrees = {
       coords: { x: 2, y: 6 }
     },
     clinch: {
-      dep: { disruptingFlurry: 1, crushingClout: 1 },
+      dep: { disruptingFlurry: 3, crushingClout: 3 },
       coords: { x: 3, y: 5.5 }
     },
 
   },
 
   "Harbinger - Revenant": {
-    miasmaMastery: {
+    keeperOfSouls: {
       dep: {},
       coords: { x: 0, y: 0 }
     },
     erodingMiasma: {
-      dep: {  },
+      dep: {},
       coords: { x: 0, y: 1 }
     },
     stiflingMiasma: {
@@ -1779,7 +1764,7 @@ let templateTitleTrees = {
       coords: { x: 1, y: 1.5 }
     },
     enshroud: {
-      dep: {  },
+      dep: {},
       coords: { x: 0, y: 3.5 }
     },
     spectralSeep: {
@@ -1791,7 +1776,7 @@ let templateTitleTrees = {
       coords: { x: 1, y: 4 }
     },
     voidReaping: {
-      dep: {  },
+      dep: {},
       coords: { x: 0, y: 5.5 }
     },
     temporalChimera: {
@@ -1805,16 +1790,16 @@ let templateTitleTrees = {
     
 
     bloodMoon: {
-      dep: {  },
+      dep: {},
       coords: { x: 2, y: 0 }
     },
-    cloyingVoid: {
-      dep: {  },
+    weightlessSoul: {
+      dep: {},
       coords: { x: 3, y: 0 }
     },
 
     maskingMiasma: {
-      dep: {  },
+      dep: {},
       
       coords: { x: 2, y: 1.5 }
     },
@@ -1849,7 +1834,7 @@ let templateTitleTrees = {
   },
 
   "Harbinger - Deathguard": {
-    miasmaMastery: {
+    keeperOfSouls: {
       dep: {},
       coords: { x: 0, y: 0 }
     },
@@ -1896,11 +1881,11 @@ let templateTitleTrees = {
       coords: { x: 2, y: 0 }
     },
     wiltingMiasma: {
-      dep: {  },
+      dep: {},
       coords: { x: 2, y: 1 }
     },
     relapseMiasma: {
-      dep: {  },
+      dep: {},
       coords: { x: 2, y: 2 }
     },
     fadingScourge: {
@@ -1922,7 +1907,7 @@ let templateTitleTrees = {
     },
 
     deathsAsylum: {
-      dep: {  },
+      dep: {},
       coords: { x: 2, y: 5 }
     },
     soulTransfer: {
@@ -2025,11 +2010,11 @@ let templateTitleTrees = {
   },
   "Masurao - Vowkeeper": {
     primevalZeal: {
-      dep: {  },
+      dep: {},
       coords: { x: 0, y: 0 }
     },
     lastingFury: {
-      dep: {primevalZeal: 2 },
+      dep: { primevalZeal: 2 },
       coords: { x: 1, y: 0 }
     },
     revelInBlood: {
@@ -2041,7 +2026,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 2.5 }
     },
     meteorReign: {
-      dep: { paleReflection: 2},
+      dep: { paleReflection: 2 },
       coords: { x: 1, y: 2.5 }
     },
     endlessReach: {
@@ -2049,11 +2034,11 @@ let templateTitleTrees = {
       coords: { x: 0, y: 4 }
     },
     armorPierce: {
-      dep: {endlessReach: 2 },
+      dep: { endlessReach: 2 },
       coords: { x: 1, y: 4 }
     },
     autumnWind: {
-      dep: { },
+      dep: {},
       coords: { x: 0, y: 5.5 }
     },
     footSweep: {
@@ -2078,19 +2063,19 @@ let templateTitleTrees = {
       coords: { x: 3, y: 1.5 }
     },
     lifeborne: {
-      dep: {sunderLeech: 3 },
+      dep: { sunderLeech: 3 },
       coords: { x: 3, y: 0.5 }
     },
     branchingSelf: {
       dep: {},
       coords: { x: 2, y: 3 }
     },
-    overlimitFang: {
+    blossomDance: {
       dep: { branchingSelf: 3 },
       coords: { x: 3, y: 2.5 }
     },
-    shieldEcho: {
-      dep: {branchingSelf: 3 },
+    stoneRipples: {
+      dep: { branchingSelf: 3 },
       coords: { x: 3, y: 3.5 }
     },
     guardiansGrace: {
@@ -2098,7 +2083,7 @@ let templateTitleTrees = {
       coords: { x: 2, y: 4 }
     },
     innerPeace: {
-      dep: {footSweep: 3 },
+      dep: { footSweep: 3 },
       coords: { x: 2, y: 5 }
     },
     everMoment: {
@@ -2110,60 +2095,60 @@ let templateTitleTrees = {
 
 
   "Warlock - Maledictor": {
-    temporalShift: {
+    harvestTime: {
       dep: {},
       coords: { x: 0, y: 1 }
     },
-    fatesDeadline: {
-      dep: {  },
+    smearTheSoul: {
+      dep: {},
       coords: { x: 0, y: 4 }
     },
     wildParadox: {
       dep: {},
       coords: { x: 0, y: 5 }
     },
-    causalityLoop: {
-      dep: {  },
+    writtenAgain: {
+      dep: {},
       coords: { x: 0, y: 6 }
     },
 
-    chronoDrift: {
-      dep: { temporalShift: 2 },
+    fateweaver: {
+      dep: { harvestTime: 2 },
       coords: { x: 1, y: 0 }
     },
-    hasteMastery: {
-      dep: { temporalShift: 2 },
+    perfectTiming: {
+      dep: { harvestTime: 2 },
       coords: { x: 1, y: 1 }
     },
 
-    rewind: {
-      dep: { temporalShift: 2 },
+    anamnesis: {
+      dep: { harvestTime: 2 },
       coords: { x: 1, y: 2 }
     },
 
-    eonRot: {
+    dustToDust: {
       dep: {},
       coords: { x: 1, y: 3 }
     },
     wretchedSeal: {
-      dep: { fatesDeadline: 2 },
+      dep: { smearTheSoul: 2 },
       coords: { x: 1, y: 4 }
     },
     splitMoment: {
-      dep: { wildParadox: 2, causalityLoop: 2 },
+      dep: { wildParadox: 2, writtenAgain: 2 },
       coords: { x: 1, y: 5.5 }
     },
     
     realitySmearing: {
-      dep: { chronoDrift: 3, hasteMastery: 3 },
+      dep: { fateweaver: 3, perfectTiming: 3 },
       coords: { x: 2, y: 0.5 }
     },
     blankChapter: {
-      dep: { rewind: 3 },
+      dep: { anamnesis: 3 },
       coords: { x: 2, y: 2 }
     },
     stasisField: {
-      dep: { eonRot: 3 },
+      dep: { dustToDust: 3 },
       coords: { x: 2, y: 3 }
     },
     cursedEternity: {
@@ -2174,7 +2159,7 @@ let templateTitleTrees = {
       dep: { splitMoment: 3 },
       coords: { x: 2, y: 5 }
     },
-    doomedFuture: {
+    inevitableEnd: {
       dep: { splitMoment: 3 },
       coords: { x: 2, y: 6 }
     },
@@ -2198,11 +2183,11 @@ let templateTitleTrees = {
   },
   
   "Warlock - Chronomancer": {
-    temporalShift: {
+    harvestTime: {
       dep: {},
       coords: { x: 0, y: 1 }
     },
-    fatesDeadline: {
+    smearTheSoul: {
       dep: {},
       coords: { x: 0, y: 4 }
     },
@@ -2210,48 +2195,48 @@ let templateTitleTrees = {
       dep: {},
       coords: { x: 0, y: 5 }
     },
-    causalityLoop: {
+    writtenAgain: {
       dep: {},
       coords: { x: 0, y: 6 }
     },
 
-    chronoDrift: {
-      dep: { temporalShift: 2 },
+    fateweaver: {
+      dep: { harvestTime: 2 },
       coords: { x: 1, y: 0 }
     },
-    hasteMastery: {
-      dep: { temporalShift: 2 },
+    perfectTiming: {
+      dep: { harvestTime: 2 },
       coords: { x: 1, y: 1 }
     },
 
-    rewind: {
-      dep: { temporalShift: 2 },
+    anamnesis: {
+      dep: { harvestTime: 2 },
       coords: { x: 1, y: 2 }
     },
 
-    eonRot: {
+    dustToDust: {
       dep: {},
       coords: { x: 1, y: 3 }
     },
     wretchedSeal: {
-      dep: { fatesDeadline: 2 },
+      dep: { smearTheSoul: 2 },
       coords: { x: 1, y: 4 }
     },
     splitMoment: {
-      dep: { wildParadox: 2, causalityLoop: 2 },
+      dep: { wildParadox: 2, writtenAgain: 2 },
       coords: { x: 1, y: 5.5 }
     },
     
     accelero: {
-      dep: { chronoDrift: 3, hasteMastery: 3 },
+      dep: { fateweaver: 3, perfectTiming: 3 },
       coords: { x: 2, y: 0.5 }
     },
     rethread: {
-      dep: { rewind: 3 },
+      dep: { anamnesis: 3 },
       coords: { x: 2, y: 2 }
     },
-    surgeOfTime: {
-      dep: { eonRot: 3, wretchedSeal: 3 },
+    sowAndReap: {
+      dep: { dustToDust: 3, wretchedSeal: 3 },
       coords: { x: 2, y: 3.5 }
     },
     entropySpike: {
@@ -2263,11 +2248,11 @@ let templateTitleTrees = {
       coords: { x: 2, y: 6 }
     },
 
-    pastSequence: {
+    borrowTomorrow: {
       dep: { accelero: 3 },
       coords: { x: 3, y: 0.5 }
     },
-    kismetDenial: {
+    falseEvent: {
       dep: { rethread: 3 },
       coords: { x: 3, y: 1.5 }
     },
@@ -2301,7 +2286,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 5.5 }
     },
     gospel: {
-      dep: { aegisPrayer: 2},
+      dep: { aegisPrayer: 2 },
       coords: { x: 1, y: 1 }
     },
     heavensGift: {
@@ -2309,7 +2294,7 @@ let templateTitleTrees = {
       coords: { x: 1, y: 2 }
     },
     auspiceCircle: {
-      dep: {  },
+      dep: {},
       coords: { x: 1, y: 0 }
     },
     holyFlame: {
@@ -2334,7 +2319,7 @@ let templateTitleTrees = {
       coords: { x: 2, y: 0 }
     },
     chantedBastion: {
-      dep: {  },
+      dep: {},
       coords: { x: 2, y: 1 }
     },
     severingRite: {
@@ -2342,7 +2327,7 @@ let templateTitleTrees = {
       coords: { x: 2, y: 2 }
     },
     absolution: {
-      dep: {holyFlame: 3},
+      dep: { holyFlame: 3 },
       coords: { x: 2, y: 3 }
     },
     bloodlitHymn: {
@@ -2366,7 +2351,7 @@ let templateTitleTrees = {
       coords: { x: 3, y: 3 }
     },
     lifeTrade: {
-      dep: {sacredVessel: 3},
+      dep: { sacredVessel: 3 },
       coords: { x: 3, y: 6 }
     },
   },
@@ -2425,7 +2410,7 @@ let templateTitleTrees = {
       coords: { x: 3, y: 3 }
     },
     sacredStep: {
-      dep: {  },
+      dep: {},
       coords: { x: 2, y: 3.5 }
     },
     apotheosis: {
@@ -2437,7 +2422,7 @@ let templateTitleTrees = {
       coords: { x: 2, y: 6 }
     },
     benevolence: {
-      dep: {renewalCharm: 3},
+      dep: { renewalCharm: 3 },
       coords: { x: 3, y: 0 }
     },
     funeralPyre: {
@@ -2445,11 +2430,11 @@ let templateTitleTrees = {
       coords: { x: 3, y: 2 }
     },
     exorcismPrayer: {
-      dep: {sacredStep: 3},
+      dep: { sacredStep: 3 },
       coords: { x: 3, y: 4 }
     },
     watchfulSpirit: {
-      dep: {shikigami: 3},
+      dep: { shikigami: 3 },
       coords: { x: 3, y: 6 }
     }
   },
@@ -2552,7 +2537,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 1.5 }
     },
     purification: {
-      dep: {sweepingHerb: 2, revivalHerb: 2},
+      dep: { sweepingHerb: 2, revivalHerb: 2 },
       coords: { x: 1, y: 1 }
     },
     herbForaging: {
@@ -2560,7 +2545,7 @@ let templateTitleTrees = {
       coords: { x: 1, y: 2 }
     },
     rottingNectar: {
-      dep: {  },
+      dep: {},
       coords: { x: 0, y: 3.5 }
     },
     icicleCrash: {
@@ -2572,7 +2557,7 @@ let templateTitleTrees = {
       coords: { x: 0, y: 5.5 }
     },
     petalStorm: {
-      dep: {blightedBark: 2},
+      dep: { blightedBark: 2 },
       coords: { x: 1, y: 5 }
     },
     panacea: {
@@ -2581,7 +2566,7 @@ let templateTitleTrees = {
     },
     
     painDistill: {
-      dep: {soothingAroma: 2,purification: 2},
+      dep: { soothingAroma: 2, purification: 2 },
       coords: { x: 2, y: 0.5 }
     },
     pollenDrift: {
@@ -2597,27 +2582,27 @@ let templateTitleTrees = {
       coords: { x: 2, y: 4 }
     },
     regrowth: {
-      dep: {pollenDrift: 3},
+      dep: { pollenDrift: 3 },
       coords: { x: 3, y: 2 }
     },
     foulFerment: {
-      dep: {petalStorm: 3},
+      dep: { petalStorm: 3 },
       coords: { x: 2, y: 5 }
     },
     corruption: {
-      dep: {panacea: 3},
+      dep: { panacea: 3 },
       coords: { x: 2, y: 6 }
     },
     symbiosis: {
-      dep: {painDistill: 3},
+      dep: { painDistill: 3 },
       coords: { x: 3, y: 0.5 }
     },
     catastrophicMix: {
-      dep: {foulFerment: 3},
+      dep: { foulFerment: 3 },
       coords: { x: 3, y: 4.5 }
     },
     smokeblight: {
-      dep: {foulFerment: 3},
+      dep: { foulFerment: 3 },
       coords: { x: 3, y: 5.5 }
     },
   },
@@ -2625,7 +2610,7 @@ let templateTitleTrees = {
 
 
 
-  
+
 };
 
 
@@ -2639,7 +2624,7 @@ let raceSkills = {
   Earthlain: {
 
     analyze: { name_en: "Analyze", desc: "", stats: [], type: "★", dep: {}, maxLevel: 1, coords: { x: 0, y: 0.5 } },
-    doubleAttack: { name_en: "Double Attack", desc: "", stats: [], type: "★", dep: {}, maxLevel: 1, coords: { x: 1, y: 0.5} },
+    doubleAttack: { name_en: "Double Attack", desc: "", stats: [], type: "★", dep: {}, maxLevel: 1, coords: { x: 1, y: 0.5 } },
     fullRetreat: { name_en: "Full Retreat", desc: "", stats: [], type: "★", dep: {}, maxLevel: 1, coords: { x: 0, y: 1.5 } },
     manaHeal: { name_en: "Mana Heal", desc: "", stats: [], type: "★", dep: {}, maxLevel: 1, coords: { x: 1, y: 1.5 } },
     blessing: { name_en: "Blessing", desc: "", stats: [], dep: {}, maxLevel: 1, coords: { x: 0, y: 2.5 } },
