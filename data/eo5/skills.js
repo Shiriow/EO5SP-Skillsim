@@ -1096,7 +1096,7 @@ let templateSharedSkills = {
   },
   oraclesVerdict: {
     name_en: "Oracle's Verdict",
-    desc: "Attack one ally and increase their attack for a set number of turns. If the ally instead evades the attack, increase all combatant's attack.",
+    desc: "Cut attack to one ally and increase their attack for a set number of turns. If the ally instead evades the attack, increase all combatant's attack.",
     stats: [],
     maxLevel: 6
   },
@@ -1108,7 +1108,7 @@ let templateSharedSkills = {
   },
   lifeTrade: {
     name_en: "Life Trade",
-    desc: "Deals melee INT-based bash damage to one enemy. Damage is affected by how low the party's HP is.",
+    desc: "Deals ranged INT-based bash damage to one enemy. Damage is affected by how low the party's HP is.",
     stats: [],
     maxLevel: 8
   },
@@ -1132,7 +1132,7 @@ let templateSharedSkills = {
   },
   bloodlitHymn: {
     name_en: "Bloodlit Hymn",
-    desc: "Deals ranged INT-based bash damage to all enemies, and then all party members.",
+    desc: "Deals ranged INT-based stab damage to all enemies, and then all party members.",
     stats: [],
     maxLevel: 8
   },
@@ -1186,7 +1186,7 @@ let templateSharedSkills = {
   },
   apotheosis: {
     name_en: "Apotheosis", 
-    desc: "Requires a Shaman summon. Deals volt damage to one enemy.",
+    desc: "Requires a Shaman summon. Deals all physical damage to one enemy.",
     stats: [],
     maxLevel: 10
   },
